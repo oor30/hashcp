@@ -7,23 +7,34 @@
 
 ## 使い方
 
+### ライブラリのインストール
+
+```zsh
+pip install -r requirements.txt
 ```
+
+### 実行
+
+```zsh
 python hashFilename.py [options] <directory>
 ```
 
 ### オプション
 
-```
+```zsh
 -o --output <directory>
 ```
+
 複製先のディレクトリ名とCSVファイル名を指定します（デフォルト： output）。
 
-```
+```zsh
 -r --recursive
 ```
+
 サブディレクトリ内のファイルも、再帰的に実行します。
 
-```
+```zsh
 -e --extensions <extensions...>
 ```
+
 対象となるファイルの拡張子を、スペース区切りで指定します。
