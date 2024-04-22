@@ -1,0 +1,9 @@
+README.md
+setup.py
+hashcp/__init__.py
+hashcp/hashcp.py
+hashcpa.egg-info/PKG-INFO
+hashcpa.egg-info/SOURCES.txt
+hashcpa.egg-info/dependency_links.txt
+hashcpa.egg-info/requires.txt
+hashcpa.egg-info/top_level.txt

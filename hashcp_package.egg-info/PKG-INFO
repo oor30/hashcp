@@ -1,10 +1,4 @@
 Metadata-Version: 2.1
 Name: hashcp_package
 Version: 0.1.0
-Requires-Dist: altgraph==0.17.4
-Requires-Dist: macholib==1.16.3
-Requires-Dist: natsort==8.4.0
-Requires-Dist: packaging==24.0
-Requires-Dist: pyinstaller==6.6.0
-Requires-Dist: pyinstaller-hooks-contrib==2024.4
-Requires-Dist: setuptools==69.5.1
+Requires-Dist: natsort
