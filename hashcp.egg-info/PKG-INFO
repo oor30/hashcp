@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: hashcp
-Version: 0.1.0
-Summary: hashcp package
-Author: kazuki wakamatsu
-License: MIT
-Requires-Dist: natsort
