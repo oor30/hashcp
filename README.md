@@ -17,13 +17,13 @@
 ### インストール
 
 ```zsh
-pip install -r requirements.txt
+pip install git+https://github.com/oor30/hashcp.git
 ```
 
 ## 使い方
 
 ```zsh
-python hashcp.py [options] <directory>
+hashcp [options] <directory>
 ```
 
 ### オプション
