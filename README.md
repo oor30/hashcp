@@ -1,5 +1,7 @@
 # hashcp
 
+[README in English](https://github.com/oor30/hashcp/blob/master/README-en.md)
+
 ## 概要
 
 ファイルを複製 & ファイル名をハッシュ値に一括変更するプログラムです。
