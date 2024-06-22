@@ -1,22 +1,29 @@
-# HashFilename.py
+# hashcp
 
 ## 概要
 
-コマンドライン引数に指定したディレクトリ内に存在するファイルを複製し、ファイル名をファイルのハッシュ値に変換するプログラムです。
-元のファイル名と変換後のファイル名の対応表をCSV形式で出力します。
+ファイルを複製 & ファイル名をハッシュ値に一括変更するプログラムです。
+変換前後のファイル名の対応表（CSVファイル）も出力します。
 
-## 使い方
+大量の画像データ等を、重複しないファイル名に変更したい時などに有効です。
 
-### ライブラリのインストール
+## 導入方法
+
+### 必要環境
+
+- Python
+- pip
+
+### インストール
 
 ```zsh
 pip install -r requirements.txt
 ```
 
-### 実行
+## 使い方
 
 ```zsh
-python hashFilename.py [options] <directory>
+python hashcp.py [options] <directory>
 ```
 
 ### オプション
@@ -38,3 +45,9 @@ python hashFilename.py [options] <directory>
 ```
 
 対象となるファイルの拡張子を、スペース区切りで指定します。
+
+```zsh
+-t --keeptree
+```
+
+ディレクトリ構造を保持したまま複製します。
