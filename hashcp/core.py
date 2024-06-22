@@ -26,13 +26,13 @@ def cli():
     return
   
   # 対象ファイル数確認
-  if confirm('{0} files found. Run these files?[y/N]'.format(len(files))) == False:
+  if not confirm('{0} files found. Run these files?[y/N]'.format(len(files))):
     return
   
   # 保存場所
   # 存在する場合、上書きされることを確認
   if os.path.isdir(DST_DIR):
-    if confirm("Directory \'{}\' is already exists. Will you delete files in the directory and run?[y/N]: ".format(DST_DIR)) == False:
+    if not confirm("Directory \'{}\' is already exists. Will you delete files in the directory and run?[y/N]: ".format(DST_DIR)):
       return
     else:
       shutil.rmtree(DST_DIR)
