@@ -4,7 +4,7 @@
 
 ## Summary
 
-This program duplicates files and changes file names to hash values ​​in bulk.
+This program duplicates files and changes file names to hash values（MD5） ​​in bulk.
 It also outputs a table (CSV file) showing the correspondence between file names before and after conversion.
 
 This is useful when you want to change the file names of large amounts of image data, etc. to unique file names.
