@@ -9,7 +9,7 @@ def searchTargetFiles(root_dir: str, extensions: list[str], recursive: bool) -> 
   """指定ディレクトリの中から、指定拡張子のファイルの相対パスを再帰的に探して返す
   """
   files = glob.glob('**', recursive=recursive, root_dir=root_dir)
-  print(files)
+  # print(files)
   if 'all' in extensions:
     extensions.clear()
   elif 'image' in extensions:
