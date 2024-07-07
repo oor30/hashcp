@@ -9,6 +9,8 @@ It also outputs a table (CSV file) showing the correspondence between file names
 
 This is useful when you want to change the file names of large amounts of image data, etc. to unique file names.
 
+<img width="700" alt="hashcpデモ" src="https://github.com/oor30/hashcp/assets/66106684/e4d76912-721d-45db-8ed0-a4f3d0f67ba9">
+
 ## Getting start
 
 ### Requirement
