@@ -1,5 +1,3 @@
-
-https://github.com/oor30/hashcp/assets/66106684/f29232b8-c88f-4ad3-9a91-dd7ec18b1444
 # hashcp
 
 [README in English](https://github.com/oor30/hashcp/blob/master/README-en.md)
