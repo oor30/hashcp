@@ -9,7 +9,7 @@
 
 大量の画像データ等を、重複しないファイル名に変更したい時などに有効です。
 
-![hashcp_demo](https://github.com/oor30/hashcp/assets/66106684/e4d76912-721d-45db-8ed0-a4f3d0f67ba9)
+<img width="700" alt="hashcpデモ" src="https://github.com/oor30/hashcp/assets/66106684/e4d76912-721d-45db-8ed0-a4f3d0f67ba9">
 
 ## 導入方法
 
@@ -54,4 +54,5 @@ hashcp [options] <directory>
 -t --keeptree
 ```
 
-ディレクトリ構造を保持したまま複製します。
+ディレクトリ構造を保持したまま複製します。<br>
+指定しない場合、outputディレクトリ直下にすべて複製されます。
