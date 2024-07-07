@@ -1,3 +1,5 @@
+
+https://github.com/oor30/hashcp/assets/66106684/f29232b8-c88f-4ad3-9a91-dd7ec18b1444
 # hashcp
 
 [README in English](https://github.com/oor30/hashcp/blob/master/README-en.md)
@@ -8,6 +10,8 @@
 変換前後のファイル名の対応表（CSVファイル）も出力します。
 
 大量の画像データ等を、重複しないファイル名に変更したい時などに有効です。
+
+![hashcp_demo](https://github.com/oor30/hashcp/assets/66106684/e4d76912-721d-45db-8ed0-a4f3d0f67ba9)
 
 ## 導入方法
 
