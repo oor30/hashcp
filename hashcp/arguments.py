@@ -20,6 +20,8 @@ def get_args():
   parser.add_argument('-o', '--output', help='Set output directory name and csv name (default: %(default)s)', type=str, default=DEFAULT_OUTPUT)
   parser.add_argument('-r', '--recursive', help='Recursively ', action='store_true')
   parser.add_argument('-t', '--keeptree', help='copy files with keeping tree structure', action='store_true')
+  parser.add_argument('-a', '--algorithm', help='choose hash algorithm',
+                      choices=['md5', 'sha256', 'sha3_256', 'sha1', 'sha224', 'sha384' 'sha512', 'sha3_224', 'sha3_384', 'sha3_512'], default='md5')
   parser.add_argument('-e',
                       '--extensions',
                       help='Type target file extensions separated by space. if you type \'all\', all files will be target. if you type \'image\', image files will be target({}).'.format(' '.join(IMAGE_EXTENSIONS)),

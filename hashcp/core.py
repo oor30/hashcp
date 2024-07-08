@@ -18,6 +18,7 @@ def cli():
   DST_DIR = args.output
   IS_RECURSIVE = args.recursive
   KEEP_TREE = args.keeptree
+  ALGORITHM = args.algorithm
   extensions = args.extensions
   files = searchTargetFiles(SRC_DIR, extensions, IS_RECURSIVE)
   # ファイルがなければ終了
@@ -40,10 +41,10 @@ def cli():
   else:
     os.mkdir(DST_DIR)
   print('Copying and renaming files with extensions({0}) in directory \'{1}\'...'.format(','.join(extensions), SRC_DIR))
-  hashcp(files, SRC_DIR, DST_DIR, KEEP_TREE)
+  hashcp(files, SRC_DIR, DST_DIR, KEEP_TREE, ALGORITHM)
   print('Finished running. Copied and renamed {} files.'.format(len(files)))
   
-def hashcp(files: list[str], src_dir: str, dst_dir: str, keep_tree: bool):
+def hashcp(files: list[str], src_dir: str, dst_dir: str, keep_tree: bool, algorithm: str):
   # 実行
   with open('{}.csv'.format(DEFAULT_OUTPUT), 'w', newline='', encoding="utf-8") as c:
     writer = csv.writer(c)
@@ -56,7 +57,7 @@ def hashcp(files: list[str], src_dir: str, dst_dir: str, keep_tree: bool):
       with open(orig_path, 'rb') as f:
         _, extension = os.path.splitext(file)
         # ハッシュ化したファイル名
-        renamed_file_name = hashlib.md5(f.read()).hexdigest() + extension
+        renamed_file_name = hashlib.file_digest(f, algorithm).hexdigest() + extension
 
         # ハッシュ化したファイルのパス
         if keep_tree:
