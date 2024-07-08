@@ -55,3 +55,10 @@ Specify the file extensions of the files to be included, separated by spaces.
 ```
 
 The directory structure will be preserved when you duplicate it.
+
+```zsh
+-a --algorithm <algorithm>
+```
+
+Specifies the hashing algorithm.<br>
+See the help command for supported algorithms.
