@@ -8,9 +8,6 @@ from hashcp.search import searchTargetFiles
 from hashcp.confirm import confirm
 from hashcp.progress_bar import ProgBar
 
-IMAGE_EXTENSIONS = ['jpg', 'jpeg', 'png', 'gif', 'svg']
-DEFAULT_OUTPUT = 'output'
-
 def cli():
   # コマンドライン引数
   args = get_args()
@@ -46,7 +43,7 @@ def cli():
   
 def hashcp(files: list[str], src_dir: str, dst_dir: str, keep_tree: bool, algorithm: str):
   # 実行
-  with open('{}.csv'.format(DEFAULT_OUTPUT), 'w', newline='', encoding="utf-8") as c:
+  with open('{}.csv'.format(dst_dir), 'w', newline='', encoding="utf-8") as c:
     writer = csv.writer(c)
     writer.writerow(['元ファイル場所', '元ファイル名', '変換後ファイル名'])
     prog_bar = ProgBar(len(files))
